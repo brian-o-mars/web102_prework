@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRmY3IybW1maHVjc3h1dGFnbmlxbHIwZXA5ZTVvam9vY2I4NDFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sVvaQs86dsQzJwwYjS/giphy.gif)
+![Video Walkthrough](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRmY3IybW1maHVjc3h1dGFnbmlxbHIwZXA5ZTVvam9vY2I4NDFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sVvaQs86dsQzJwwYjS/giphy.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif  
