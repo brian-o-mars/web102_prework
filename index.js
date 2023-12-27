@@ -194,3 +194,56 @@ firstGameContainer.appendChild(mostFundedGameElement);
 const secondMostFundedGameElement = document.createElement("div");
 secondMostFundedGameElement.innerHTML = `<p>${secondMostFundedGame.name}</p>`;
 secondGameContainer.appendChild(secondMostFundedGameElement);
+
+
+// Form javascript
+document.addEventListener('DOMContentLoaded', function () {
+    const feedbackForm = document.getElementById('feedback-form');
+  
+    feedbackForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Make form not submit
+  
+      // Form validation
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+  
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+        return;
+      }
+  
+      // If no validation error, form can submit and fields are reset
+      alert('Feedback submitted successfully!');
+      feedbackForm.reset();
+    });
+  });
+  
+
+// Seach bar functionality
+function searchGames(searchTerm) {
+    const filteredGames = GAMES_JSON.filter(game =>
+        game.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // Display the filtered games
+    deleteChildElements(gamesContainer);
+    addGamesToPage(filteredGames);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const searchButton = document.getElementById('search-btn');
+    searchButton.addEventListener('click', function () {
+        const searchTerm = document.getElementById('search').value.trim();
+        searchGames(searchTerm);
+    });
+
+    const refreshButton = document.getElementById('refresh-btn');
+    refreshButton.addEventListener('click', function () {
+        // Clear the search input
+        document.getElementById('search').value = '';
+        
+        // Show all games
+        showAllGames();
+    });
+});
