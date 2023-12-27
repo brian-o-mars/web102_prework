@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![](https://github.com/brian-o-mars/web102_prework/tree/main/assets/!codepath-gif.gif)
+![](https://imgur.com/a/yo793Hm)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif  
