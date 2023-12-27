@@ -226,7 +226,7 @@ function searchGames(searchTerm) {
         game.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    // Display the filtered games
+    // Show the filtered games
     deleteChildElements(gamesContainer);
     addGamesToPage(filteredGames);
 }
